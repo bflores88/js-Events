@@ -88,8 +88,8 @@ function changePug() {
 
 menu.addEventListener('click', dispDessert);
 
-function dispDessert(){
-    if(dessert.style.display === 'none'){
+function dispDessert() {
+    if (dessert.style.display === 'none') {
         dessert.style.display = 'block';
     } else {
         dessert.style.display = 'none';
@@ -108,6 +108,25 @@ var grimace = {
     hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
 };
 
+bio.addEventListener('click', grimProf);
+
+function grimProf() {
+    var grimName = document.createElement('div');
+    grimName.id = 'grimName';
+    grimName.innerHTML = "Name: " + grimace.name;
+    bio.appendChild(grimName);
+
+    var grimSign = document.createElement('div');
+    grimSign.id = 'grimSign';
+    grimSign.innerHTML = 'Sign: ' + grimace.sign;
+    bio.appendChild(grimSign);
+
+    var grimHobb = document.createElement('div');
+    grimHobb.id = 'grimHobbies';
+    grimHobb.innerHTML = 'Hobbies: ' + grimace.hobbies;
+    bio.appendChild(grimHobb);
+
+}
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
