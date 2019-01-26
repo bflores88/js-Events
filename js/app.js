@@ -10,9 +10,9 @@ var bliss = "Let's put some happy little bushes on the other side now. Anything 
 
 
 function moreTrees() {
-    if(nirvana.innerHTML === ''){
+    if (nirvana.innerHTML === '') {
         nirvana.innerHTML = bliss;
-    }else{
+    } else {
         nirvana.innerHTML = '';
     }
 }
@@ -24,11 +24,11 @@ function moreTrees() {
 The function will hide the contents in the pargraph with the id of `less`.*/
 
 
-function lessContent(){
+function lessContent() {
     console.log(less.style.display)
-    if(less.style.display !== 'none'){
+    if (less.style.display !== 'none') {
         less.style.display = 'none';
-    }else{
+    } else {
         less.style.display = 'block';
     }
 }
@@ -43,7 +43,7 @@ border: 3px dotted rosybrown
 padding: 10px
 */
 
-function bling(){
+function bling() {
     worm.style.color = '#33cc33';
     worm.style.fontSize = '28px';
     worm.style.border = '3px dotted rosybrown';
@@ -57,13 +57,12 @@ var missing = "1 Big ol' beet";
 
 recipe.addEventListener('click', lastItem);
 
-function lastItem(){
+function lastItem() {
     console.log('test');
     var daBeet = document.createElement('li');
     daBeet.className = 'mix';
     daBeet.innerHTML = missing;
-    console.log(document.querySelector('.block1.col-sm-4'));
-    document.querySelectorAll('.block1.col-sm-4')[1].appendChild(daBeet);
+    ingredient.appendChild(daBeet);
 }
 
 //5. Pug Life
@@ -72,6 +71,16 @@ function lastItem(){
 // Use this for the new image:
 // 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
 
+puggy.addEventListener('mouseover', changePug);
+
+function changePug() {
+    if (puggy.src === 'https://bit.ly/2RhOvm4') {
+        puggy.src = 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif';
+    } else {
+        puggy.src = "https://bit.ly/2RhOvm4";
+    }
+}
+// var newPug = document.getElementById('puggy').src;
 
 
 //6. DevLeague Lunch Wagon
