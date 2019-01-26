@@ -8,6 +8,12 @@ The function will add the following content inside the paragraph with the id of 
 
 var bliss = "Let's put some happy little bushes on the other side now. Anything you want to do you can do here. Trees cover up a multitude of sins. If you don't like it - change it. It's your world. Maybe there's a happy little waterfall happening over here."
 
+happy.addEventListener('click', moreTrees);
+
+function moreTrees() {
+    nirvana.innerHTML = bliss;
+}
+
 
 //2. Less is More
 /*Create a function named `lessContent` that will invoke the function after clicking on the button.
@@ -68,4 +74,3 @@ var messages = ["That wasn't chicken.", "The fortune you seek is in another cook
 
 //9. Open Sesame
 /*Add an event listener to the `secret` input element that will capitalize letter inputs in the form. Hint, you'll be using the keyup event*/
-
