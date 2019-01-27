@@ -133,6 +133,12 @@ function grimProf() {
 
 var messages = ["That wasn't chicken.", "The fortune you seek is in another cookie.", "Tell your friends about DevLeague Prep.", "You will be doing many events tonight.", "Don't let statistics do a number on you.", "Buy your instructor a drink and receive double fortune.", "Is a turtle without a shell naked or homeless?"];
 
+fortune.addEventListener('click', getFortune);
+
+function getFortune(){
+    showFortune.innerHTML = messages[Math.floor(Math.random()*messages.length)];
+}
+
 
 //9. Open Sesame
 /*Add an event listener to the `secret` input element that will capitalize letter inputs in the form. Hint, you'll be using the keyup event*/
